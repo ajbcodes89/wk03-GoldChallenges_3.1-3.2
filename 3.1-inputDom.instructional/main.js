@@ -10,3 +10,28 @@
 */
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
+
+//how to recieve input information
+
+const form = document.querySelector('form')
+let product = document.getElementById("product")
+let quantity = document.getElementById("quantity")
+let store = document.getElementById("store")
+
+
+let p = document.querySelector('p')
+
+function setVar(e) {
+    let answer = `I shopped at ${store.value} for ${quantity.value} ${product.value}`
+    console.log(answer)
+    p.textContent = answer
+}
+
+// function productFunc() {
+//     let productAns = document.getElementById("product").submit();
+//     console.log(productAns)
+// }
+// function quantityFunc() {
+//     let quantityAns = document.getElementById("quantity").submit();
+//     console.log(productAns)
+// }
