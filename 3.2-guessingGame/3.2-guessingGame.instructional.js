@@ -20,4 +20,49 @@
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
-for (i = 0; i <=10; i++)
+let submission = document.querySelector("input").value;
+userAnswer = parseInt(submission);
+
+computerAnswer = Math.floor(Math.random() * 10) + 1;
+
+function submitFunc() {
+    if (userAnswer >= computerAnswer) {
+        alert('Guess lower!')
+        console.log(computerAnswer)
+        console.log(userAnswer)
+    } else if (userAnswer <= computerAnswer) {
+        alert('Guess higher!'); 
+        console.log(computerAnswer)
+        console.log(userAnswer)
+    } else if (userAnswer === computerAnswer) {
+        alert('You won!')
+        console.log(computerAnswer)
+        console.log(userAnswer)
+    } else {
+        alert('error')
+        console.log(computerAnswer)
+        console.log(userAnswer)
+    }
+}
+submitFunc();
+
+
+// let p = document.querySelector('p')
+// function youWon(e) {
+    //     let answer = `You won!`
+    //     console.log(answer)
+    //     p.textContent = answer
+    // }
+    
+    // function guessHigher(e) {
+    //     let tooLow = `Guess Higher`
+    //     console.log(tooLow)
+    //     p.textContent = tooLow
+    // }
+    
+    // function guessLower(e) {
+    //     let tooHigh = `Guess Lower`
+    //     console.log(tooHigh)
+    //     p.textContent = tooHigh
+    // }
+// }

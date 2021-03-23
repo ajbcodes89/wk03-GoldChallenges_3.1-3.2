@@ -1,0 +1,9 @@
+body {
+    background-color: gold;
+    display: inline-flex;
+    justify-content: space-evenly;
+    max-width: 60%;
+}
+.form {
+    display: inline-flex;
+}
