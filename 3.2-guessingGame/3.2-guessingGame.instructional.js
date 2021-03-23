@@ -20,17 +20,16 @@
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
-let submission = document.querySelector("input").value;
-userAnswer = parseInt(submission);
-
 computerAnswer = Math.floor(Math.random() * 10) + 1;
 
 function submitFunc() {
-    if (userAnswer >= computerAnswer) {
+    let submission = document.querySelector("input").value;
+    userAnswer = parseInt(submission);
+    if (userAnswer > computerAnswer) {
         alert('Guess lower!')
         console.log(computerAnswer)
         console.log(userAnswer)
-    } else if (userAnswer <= computerAnswer) {
+    } else if (userAnswer < computerAnswer) {
         alert('Guess higher!'); 
         console.log(computerAnswer)
         console.log(userAnswer)
